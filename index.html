@@ -3,17 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
-<style>
+    <title>Web site</title>
+    <style>
 .myDiv {
-  border: 5px outset darkblue;
-  background-color: lightblue;
+  border: 5px outset rgb(107, 22, 192);
+  background-color: rgb(102, 181, 207);
   text-align: center;
+}
+body{
+  background-color: rgb(102, 181, 207);
+}
+.wrapper{
+  display: flex;
+  flex-direction:column;
 }
 </style>
 </head>
+
 <body>
-    <h1>Вітаю на моїй веб-сторінці!</h1>
-    <p>Це приклад базового HTML-документа.</p>
+  
+      <h1>Settings</h1>
+      <div class="wrapper">
+      <a href="#" class="nav-link">All settings</a>
+      <a href="#" class="nav-link">Published</a>
+      <a href="#" class="nav-link">BTC</a>
+      <a href="#" class="nav-link">USDT</a>
+      <a href="#" class="nav-link">TON</a>
+      </div>
+      <table class="table">
+  <thead>
+    <tr>
+      <th>Setting name</th>
+      <th>Status</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#">BTC</a></td>
+      <td class="status">Draft</td>
+      <td class="delete-icon"><img src="Icon-remove.svg" alt="delete"></td>
+    </tr>
+    <tr>
+      <td><a href="#">USDT</a></td>
+      <td class="status">Active</td>
+      <td class="delete-icon"><img src="Icon-remove.svg" alt="delete"></td>
+    </tr>
+    <tr>
+      <td><a href="#">TON</a></td>
+      <td class="status">Active</td>
+      <td class="delete-icon"><img src="Icon-remove.svg" alt="delete"></td>
+    </tr>
+  </tbody>
+</table>
 </body>
 </html>
