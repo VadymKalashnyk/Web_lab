@@ -1,0 +1,80 @@
+:root {
+    --Color-text-text: #303030;
+    --Color-bg: #F1F1F1;
+    --Color-icon-icon-success: #29845A;
+    --Color-text-link-link: #0070F3;
+    --Height-table-row: 44px;
+    --Color-bg-fill-fill-success-secondary: #CDFEE1;
+    --Color-text-text-success: #0C5132;
+    --Color-border-border: #E3E3E3;
+}
+
+body{
+  background-color: rgb(73, 168, 70);
+}
+
+.container {
+    width: 100%;
+    max-width: 1376px;
+    margin: 0 auto;
+}
+
+.page-heading {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--Color-text-text);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid var(--Color-border-border);
+  padding: 12px;
+  text-align: left;
+}
+
+.table-elem {
+  height: var(--Height-table-row);
+}
+
+.status .draft {
+  color: var(--Color-text-text);
+  background-color: #fef3c7;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.status .active {
+  color: var(--Color-text-text-success);
+  background-color: var(--Color-bg-fill-fill-success-secondary);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.nav-link {
+  margin-right: 16px;
+  color: var(--Color-text-link-link);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.delete-icon img {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  gap: 16px;
+  margin: 20px 0;
+}
