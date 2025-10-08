@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web site</title>
-    <link rel ="stylesheet" href="./resources/reset.css">
-    <link rel ="stylesheet" href="./resources/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Site</title>
+    <link rel="stylesheet" href="./resources/reset.css" />
+    <link rel="stylesheet" href="./resources/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-<body>
-  
+  <body>
+    <div class="container">
       <h1>Settings</h1>
-      <div class="wrapper">
-        
-        <a href="#" class="nav-link">All settings</a>
+      <nav class="nav">
+        <a href="#" class="nav-link active-link">All settings</a>
         <a href="#" class="nav-link">Published</a>
         <a href="#" class="nav-link">BTC</a>
         <a href="#" class="nav-link">USDT</a>
         <a href="#" class="nav-link">TON</a>
-      </div>
+      </nav>
       <table class="table">
-  <thead>
-    <tr>
-      <th>Setting name</th>
-      <th>Status</th>
-      <th>Delete</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="table-elem">
-      <td><a href="#"class="table-link">BTC</a></td>
-      <td class="status"><span class="draft">Draft</span></td>
-      <td class="delete-icon"><img src="Icon-remove.svg" alt="delete"></td>
-    </tr>
-    <tr class="table-elem">
-      <td><a href="#"class="table-link">USDT</a></td>
-      <td class="status"><span class="active">Active</span></td>
-      <td class="delete-icon"><img src="Icon-remove.svg" alt="delete"></td>
-    </tr>
-    <tr class="table-elem">
-      <td><a href="#"class="table-link">TON</a></td>
-      <td class="status"><span class="draft">Draft</span></td>
-      <td class="delete-icon"><img src="Icon-remove.svg" alt="delete"></td>
-    </tr>
-  </tbody>
-</table>
-</body>
+        <tbody>
+          <thead>
+            <tr>
+              <th class="table-head">
+                <a href="settings.html">Set-Creator-Logic</a>
+              </th>
+              <th class="table-head">Status</th>
+            </tr>
+          </thead>
+          <tr class="table-elem">
+            <td>
+              <a href="#" class="table-link">Content</a>
+            </td>
+            <td class="status"><span class="draft">Draft</span></td>
+            <td class="delete-icon">
+              <button type="button" class="delete-button">
+                <img src="./images/icons/delete-icon.svg" alt="delete icon" />
+              </button>
+            </td>
+          </tr>
+          <tr class="table-elem">
+            <td>
+              <a href="#" class="table-link">Content</a>
+            </td>
+            <td class="status"><span class="active">Active</span></td>
+            <td class="delete-icon">
+              <button type="button" class="delete-button">
+                <img src="./images/icons/delete-icon.svg" alt="delete icon" />
+              </button>
+            </td>
+          </tr>
+          <tr class="table-elem">
+            <td>
+              <a href="#" class="table-link">Content</a>
+            </td>
+            <td class="status"><span class="draft">Draft</span></td>
+            <td class="delete-icon">
+              <button type="button" class="delete-button">
+                <img src="./images/icons/delete-icon.svg" alt="delete icon" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>
