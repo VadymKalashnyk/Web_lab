@@ -28,6 +28,13 @@ body {
   }
 }
 
+.index-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 h1 {
   @include text(
     $size: 24px,
@@ -263,6 +270,7 @@ h1 {
   @include text($size: 12px, $line: 16px, $color: $color-dark);
   margin-bottom: 16px;
 }
+
 .formulas-wrapper {
   width: 100%;
   border-radius: 8px;
@@ -529,6 +537,7 @@ h1 {
   box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset,
     1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
 }
+
 .collections-btn-save {
   width: 100%;
   @include btn($bg: $color-dark, $color: $color-white);
@@ -580,4 +589,8 @@ h1 {
   display: flex;
   gap: 6px;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }
