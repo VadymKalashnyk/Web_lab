@@ -28,6 +28,13 @@ body {
   }
 }
 
+.index-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 h1 {
   @include text(
     $size: 24px,
@@ -580,4 +587,8 @@ h1 {
   display: flex;
   gap: 6px;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }

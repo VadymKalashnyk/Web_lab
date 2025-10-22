@@ -23,6 +23,19 @@ body {
     gap: 27px;
   }
 }
+
+.index-wrapper {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 h1 {
   font-size: 24px;
   font-weight: 650;
@@ -618,3 +631,7 @@ h1 {
   gap: 6px;
   align-items: center;
 }/*# sourceMappingURL=styles.css.map */
+
+.hidden {
+  display: none;
+}
