@@ -45,7 +45,7 @@ const renderSettingElem = (setting) => {
   const settingElemLink = settingTemplateElemCopy.querySelector(
     selectors.settingLink
   );
-  const settingUrl = `/settings.html?id=${setting.id}`;
+  const settingUrl = `/Users/vadym/OneDrive/Документи/GitHub/Web_lab/settings.html?id=${setting.id}`;
 
   settingElemLink.href = settingUrl;
   settingElemLink.innerText = setting.title;
