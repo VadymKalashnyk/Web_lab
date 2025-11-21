@@ -118,8 +118,20 @@ h1 {
 }
 
 .table-link {
-  color: #005bd3;
+  @include text($size: 10px, $color: #005bd3);
   padding-left: 8px;
+}
+
+@media (min-width: 425px) {
+  .table-link {
+    @include text($size: 13px, $color: #005bd3);
+  }
+}
+
+@media (min-width: 768px) {
+  .table-link {
+    @include text($size: 16px, $color: #005bd3);
+  }
 }
 
 .delete-button {
@@ -200,6 +212,10 @@ h1 {
 }
 
 .disabled {
+  padding: 6px 12px;
+  @include btn;
+  box-shadow: 0 -1px 0 0 #b5b5b5 inset, -1px 0 0 0 #e3e3e3 inset,
+    1px 0 0 0 #e3e3e3 inset, 0 1px 0 0 #e3e3e3 inset;
   color: #b5b5b5;
   background-color: #000;
   opacity: 0.1;
